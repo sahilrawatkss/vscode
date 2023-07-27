@@ -6,7 +6,10 @@ div{
     text-align: center;
     font-size: large;
 }
-
+body{
+    background-image: url("images.jpeg");
+    background-size: cover;
+}
 #box1{
     position: static;
 }
@@ -21,6 +24,4 @@ div{
 #box4{
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100vw;
 }
