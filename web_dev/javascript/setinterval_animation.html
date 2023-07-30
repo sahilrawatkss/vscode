@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 400px;
+            width: 400px;
+            background-color: yellow;
+            position: relative;
+        }
+        #anim
+        {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="func()">click</button>
+    </div>
+    <div id="box">
+        <div id="anim"></div>
+    </div>
+
+    
+</body>
+<script>
+    function func()
+    {
+        let pos=0;
+        let elem=document.getElementById("anim");
+        let id=setInterval(fun,10);
+        function fun()
+        {
+            if(pos==350)
+            {
+                clearInterval(id);
+            }
+            else
+            {
+                pos++;
+                elem.style.top=pos+"px";
+                elem.style.left=pos+"px";
+            }
+        }
+    }
+</script>
+</html>
