@@ -1,0 +1,13 @@
+div{
+    text-align: center;padding: 30px;
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    transition-duration: 1s;
+    transition-delay: 3s;
+}
+
+div:hover{
+    background-color: aqua;
+    width: 300px;
+}
