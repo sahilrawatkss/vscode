@@ -1,17 +1,6 @@
 import React, { Component } from "react";
 import "../styles/home.css"
-// import Logo from "../assets/heading_logo.png";
-// import convexhull from "../assets/convex_hull.png";
-// import sorting from "../assets/sorting.png"
-// import "particles.js";
-// import particleJSON from "../saves/particles.json";
-// import pathfinding_front from "../assets/pathfinding_front.svg";
-// import {ReactComponent as Github} from "../assets/github.svg";
-// import {ReactComponent as LinkedIn} from "../assets/linkedin.svg";
-// import {ReactComponent as LogoIcon} from "../assets/analytics.svg";
 import bar from "../saves/bar-chart.svg";
-// import graph from "../assets/graph.svg";
-// import convex from "../assets/convex.svg";
 class Home extends Component{
     constructor(){
         super();
@@ -20,7 +9,7 @@ class Home extends Component{
                 {
                     name:"Sorting",
                     imgUrl:bar,
-                    link:"/sorting"
+                    link:"/sortingpage"
                 }
             ]
         }
