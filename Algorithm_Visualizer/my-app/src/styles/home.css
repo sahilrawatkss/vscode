@@ -1,0 +1,52 @@
+:root {
+    --home-color: #2ed327;
+    --background-color: #0e0e0e;
+  }
+  
+  .back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    min-height: 100vh;
+  }
+  
+  .links {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+  }
+  
+  .main-title {
+    font-size: 3rem;
+    color: white;
+    padding-top: 18vh;
+    font-family: Anurati, sans-serif;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+  }
+  
+  .description-title {
+    color: white;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .algo-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .card::before {
+    content: "";
+    bottom: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 50%;
+    width: 5px;
+    color: #fff;
+  }
+  
