@@ -15,7 +15,7 @@ const randomInterval = (min = 5, max = 600) => {
 };
 
 // The random numbers have to have at least 10 values.
-export function fillArray(size = 10) {
+export function fillArray(size = 20) {
   const arr = [];
 
   for (let i = 0; i < size; i++) {
@@ -55,7 +55,7 @@ const Node = (props) => {
 const SorterWrapper = (props) => {
   
   const [speed, setSpeed] = useState(500);
-  const [size, setSize] = useState(10)
+  const [size, setSize] = useState(20)
   const [arr, setArr] = useState([...fillArray(size)]);
   const [sorted, setSorted] = useState(false);
 
@@ -199,7 +199,7 @@ const SorterWrapper = (props) => {
               type="range"
               min="10"
               value={size}
-              max="200"
+              max="100"
               step="10"
             />
           </div>
