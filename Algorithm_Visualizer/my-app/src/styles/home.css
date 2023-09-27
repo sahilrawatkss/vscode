@@ -19,7 +19,7 @@
   }
 
   img:hover{
-    border: 8px solid red;
+    border: 5px solid rgb(197, 9, 9);
   }
   .main-title {
     font-size: 4rem;

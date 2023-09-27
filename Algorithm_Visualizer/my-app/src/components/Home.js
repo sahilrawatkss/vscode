@@ -1,56 +1,44 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/home.css";
 import bar from "../saves/sort1.gif";
 import ds from "../saves/ds1.png";
 
-class Home extends Component {
-  constructor() {
-    super();
-    this.state = {
-      problems: [
-        {
-          name: "Sorting",
-          imgUrl: bar,
-          link: "/sortingpage",
-        },
-        {
-          name: "Data Structures",
-          imgUrl: ds,
-          link: "/datastructure",
-        },
-      ],
-    };
-  }
+function Home() {
+  const problems = [
+    {
+      name: "Sorting",
+      imgUrl: bar,
+      link: "/sortingpage",
+    },
+    {
+      name: "Data Structures",
+      imgUrl: ds,
+      link: "/datastructure", // Add a corresponding route in App.js if needed
+    },
+  ];
 
-  render() {
-    return (
-      <div className="back">
+  return (
+    <div className="back">
       <div className="back1">
         <h1 className="main-title">
-          ALGORITHM
-          <strong style={{ color: "var(--home-color)" }}>
+            ALGORITHM
             <br />
             VISUALIZER
-          </strong>
         </h1>
-        </div>
-        <div className="imglink">
-          {this.state.problems.map(element =>
-            <div
-              className="item"
-              style={{ cursor: "pointer" }}
-              onClick={() => (window.location.href = element.link)}
-            >
-              <div className="demo">
-                <img src={element.imgUrl} alt="Card cap" height={175} width={175}/>
-                  <h3 className="algo-name">{element.name}</h3>
-                </div>
-            </div>
-          )}
-        </div>
       </div>
-    );
-  }
+      <div className="imglink">
+        {problems.map((element, index) => (
+          <Link to={element.link} key={index} className="item">
+            <div className="demo">
+              <img src={element.imgUrl} alt="Card cap" height={175} width={175} />
+              <h3 className="algo-name">{element.name}</h3>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Home;

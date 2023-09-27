@@ -41,7 +41,7 @@ const Node = (props) => {
 
         style={{
           height: props.height,
-          background: `${props.sorted ? 'lightgreen' : 'lightblue'}`,
+          background: `${props.sorted ? '#5bc9b1' : '#5bc9b1'}`,
           transitionDuration: '20ms',
           textAlign: 'center',
         }}
@@ -67,7 +67,7 @@ const SorterWrapper = (props) => {
   // *** Loop Swap -- Orange
   // *** Special Swap -- Red
   const colors = {
-    default: "lightblue",
+    default: "#5bc9b1",
     curr: "lightpink",
     comparison: "coral"
   };
