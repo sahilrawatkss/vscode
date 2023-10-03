@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            float: left;
+            height: 120px;
+            width: 220px;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" ondrop="drop(event)" ondragover="allowdrop(event)">
+        <img src="img2.jpg" draggable="true" id="drag1" width="200px" height="100px" ondragstart="drag(event)">
+    </div>
+
+    <div id="box2" ondrop="drop(event)" ondragover="allowdrop(event)"></div>
+
+    <script>
+        function allowdrop(ev)
+        {
+            ev.preventDefault();
+        }
+
+        function drop(ev)
+        {
+            ev.preventDefault();
+            var data=ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+
+        function drag(ev)
+        {
+            ev.dataTransfer.setData("text",ev.target.id);
+        }
+    </script>
+</body>
+</html>

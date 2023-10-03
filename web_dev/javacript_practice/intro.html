@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Change html content -->
+    
+    <h1 id="id1">Learn Javascript</h1>
+    <button type="button" onclick='document.getElementById("id1").innerHTML="Content Changed"'>Change Content</button>
+
+    <br><br><br>
+
+    <!-- change img -->
+    <button onclick="document.getElementById('img1').src='bulboff.jpeg'">bulb off</button>
+    <img id="img1" src="bulboff.jpeg" width="170" height="300" alt="not supported">
+    <button onclick="document.getElementById('img1').src='bulbon.png'">bulb on</button>
+
+    <br><br><br>
+
+    <!-- Change CSS Style -->
+    <h3 id="cs1">Change Style</h3>
+    <button onclick="document.getElementById('cs1').style.fontSize='30px'">Change FontSize</button>
+
+    <br><br><br>
+    <button onclick="document.getElementById('cs1').style.display='none'">Hide Display</button>
+    <button onclick="document.getElementById('cs1').style.display='block'">Show Display</button>
+
+    <br><br><br>
+    <button onclick="document.getElementById('cs1').style.visibility='hidden'">Hide</button>
+    <button onclick="document.getElementById('cs1').style.visibility='visible'">Show</button>
+
+</body>
+</html>
