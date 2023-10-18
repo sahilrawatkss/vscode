@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canva" width="400px" height="300px" style="border:1px solid"></canvas>
+    <br><br>
+    <canvas id="canva2" width="400px" height="300px" style="border:1px solid"></canvas>
+    <br><br>
+    <canvas id="canva3" width="400px" height="300px" style="border:1px solid"></canvas>
+    <script>
+        const x=document.getElementById("canva");
+        const y=x.getContext("2d");
+        y.fillStyle="red";
+        y.fillRect(20,20,250,250);
+
+        const c2=document.getElementById("canva2");
+        const ctx2=c2.getContext("2d");
+
+        ctx2.fillStyle="blue";
+        ctx2.fillRect(0,0,250,250);
+        ctx2.fillStyle="yellow";
+        ctx2.fillRect(150,150,400,300);
+
+        const c3=document.getElementById("canva3");
+        const ctx3=c3.getContext("2d");
+
+        ctx3.fillStyle="green";
+        ctx3.beginPath();
+        ctx3.arc(100,100,50,0,7);
+        ctx3.stroke();
+
+        ctx3.beginPath();
+        ctx3.moveTo(200,200);
+        ctx3.lineTo(300,200);
+        ctx3.lineTo(300,300);
+        ctx3.lineTo(200,200);
+        ctx3.strokeStyle="red";
+        ctx3.stroke();
+        
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+?? operator is used if val is undefined assign anoher value
+example:
+let x;
+x??=5; x is undefined so x new value is 5
+
+-> const variable makes the reference constant not the value
+
+->Javascript numbers are always one type double (64-bit floating point).
+
+->== check only value and not a strict comparison
+  === check value and its type also
+        eg:x=5  y='5'  x==y true  but x===y false
+
+charAt()
+charCodeAt()

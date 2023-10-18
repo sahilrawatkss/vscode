@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML5 Canvas</h1>
+
+<canvas id="myCanvas" width="400" height="400" style="border:1px solid grey;"></canvas>
+
+<script>
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
+
+// Create gradient
+const grd = ctx.createRadialGradient(190,190,300,200,200,20);
+grd.addColorStop(0,"red");
+grd.addColorStop(0.3,"green");
+grd.addColorStop(0.7,"blue");
+grd.addColorStop(1,"orange");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,380,380);
+</script>
+
+</body>
+</html>

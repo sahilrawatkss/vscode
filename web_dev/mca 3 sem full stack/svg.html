@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg height="700" width="1300" style="border: solid;">
+        <rect width="300" height="200" x="50" y="100" rx="30" stroke="blue" fill="url(#l1)"/>
+        <circle cx="500" cy="200" r="100" stroke="red" stroke-width="5" fill="blue"/>
+        <line x1="650" y1="100" x2="650" y2="300" stroke="blue" stroke-width="8"/>
+        <polygon points="670,100 700,100 750,300" fill="green"/>
+        <polyline points="750,100 800,100 800,300" fill="white" stroke="blue"/>
+
+        <path d="M850,100 950,100 950,300 870,300 Z" fill="none" stroke="red"/>
+        <path d="M1000,100 Q1100,300 1200,100" fill="none" stroke="red"/>
+
+        <path id="p1" d="M50,400 A150,500 0 0 0 300,400" stroke="red" fill="red"/>
+
+        <text x="70" y="450" fill="blue" Transform="rotate(30 90,450)">Hello</text> 
+        <text>
+            <textpath xlink:href="#p1">MCA Second Year</textpath>
+        </text>
+
+        <defs>
+            <lineargradient id="l1">
+                <stop offset="0%" stop-color="green"/>
+                <stop offset="50%" stop-color="blue"/>
+                <stop offset="100%" stop-color="red"/>
+            </lineargradient>
+        </defs>
+
+        
+
+    </svg>
+</body>
+</html>

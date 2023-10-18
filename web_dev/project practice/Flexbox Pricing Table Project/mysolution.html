@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family:Georgia, 'Times New Roman', Times, serif
+        }
+
+        .container
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            height: 100vh;
+        }
+
+        .heading
+        {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .price
+        {
+            font-size: 45px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .box
+        {
+            max-width: 400px;
+            border-radius: 5%;
+            text-align: center;
+            background-color: rgb(235, 232, 235);
+            padding: 30px;
+
+        }
+
+        .list-content
+        {
+            list-style: none;
+        }
+
+        .list-content li
+        {
+            margin-bottom: 20px;
+        }
+
+        .button
+        {
+            background-color: #fa6800;
+            color: #fff;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 20px;
+            
+        }
+
+        @media (max-width: 1250px)
+        {
+            .container
+            {
+                flex-direction: column;
+                margin-bottom: 20px;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="heading">Basic</div>
+            <div class="price">$ 11.99 /month</div>
+            <div class="content">
+                <ul class="list-content">
+                    <li>✅ 10GB Storage</li>
+                    <li>✅ 1 User</li>
+                    <li>🚫 Support</li>
+                </ul>
+            </div>
+            <button class="button">Sign Up</button>
+        </div>
+        <div class="box">
+            <div class="heading">Standard</div>
+            <div class="price">$ 19.99 /month</div>
+            <div class="content">
+                <ul class="list-content">
+                    <li>✅ 50GB Storage</li>
+                    <li>✅ 5 User</li>
+                    <li>✅ Phone & Email Support</li>
+                </ul>
+            </div>
+            <button class="button">Sign Up</button>
+        </div>
+        <div class="box">
+            <div class="heading">Premium</div>
+            <div class="price">$ 49.99 /month</div>
+            <div class="content">
+                <ul class="list-content">
+                    <li>✅ 100GB Storage</li>
+                    <li>✅ 10 User</li>
+                    <li>✅ 24/7 Support</li>
+                </ul>
+            </div>
+
+            <button class="button">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
