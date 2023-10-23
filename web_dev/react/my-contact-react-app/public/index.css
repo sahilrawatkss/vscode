@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  padding: 25px;
+  margin: 0 auto;
+  background-color: #dfe6e9;
+  width: 400px;
+}
+
+img{
+  border-radius: 50%;
+  border: 7px solid #fff;
+  width: 120px;
+  height: 120px;
+  margin: 30px 20px 0 0;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2em;
+  color: #2d3436;
+  margin: 20px 0 30px;
+}
+.card {
+  background-color: #81ecec;
+  padding: 25px 20px;
+  margin: 50px 0;
+  height: 200px;
+  position: relative;
+  border-radius: 25px;
+}
+
+.contact-name {
+  font-size: 1.7em;
+  color: #2d3436;
+  margin:10% 20px 0;
+  flex: 1;
+  text-align: left;
+}
+
+.top {
+  border-radius: 25px 25px 0 0;
+  height: 100px;
+  width: 100%;
+  background-color: #00cec9;
+  display: flex;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.bottom {
+  margin-top: 120px;
+}
+
+.number {
+  color: #1a7e76;
+}
+
+.email {
+  margin: 20px 0;
+  color: #1a7e76;
+}
