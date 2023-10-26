@@ -4,6 +4,7 @@ body {
   margin: 0 auto;
   background-color: #dfe6e9;
   width: 400px;
+  text-align: center;
 }
 
 img{
@@ -12,6 +13,7 @@ img{
   width: 120px;
   height: 120px;
   margin: 30px 20px 0 0;
+  background-size: cover;
 }
 
 .heading {
@@ -52,11 +54,13 @@ img{
   margin-top: 120px;
 }
 
-.number {
-  color: #1a7e76;
-}
 
-.email {
+.info {
   margin: 20px 0;
   color: #1a7e76;
+  text-align: left;
+}
+
+.key{
+  color: black;
 }
