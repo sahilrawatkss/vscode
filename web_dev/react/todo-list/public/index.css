@@ -43,7 +43,7 @@ body {
 
 input {
   border: none;
-  border-bottom: 5px dotted yellowgreen;
+  border-bottom: 5px dashed yellowgreen;
   background-color: transparent;
   width: 70%;
   font-family: "Architects Daughter", cursive;
