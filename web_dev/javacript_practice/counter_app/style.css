@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: aquamarine;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 100px;
+  padding: 50px;
+}
+
+.counter {
+  margin-top: 2rem;
+  font-size: 200px;
+}
+
+.btn {
+  margin-top: 6rem;
+  display: flex;
+  width: 60%;
+  padding: 5px;
+  justify-content: space-evenly;
+  /* background-color: red; */
+}
+
+button {
+  border: none;
+  font-size: 25px;
+  padding: 10px 13px;
+  height: 60px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+button:hover {
+  border: solid rgb(176, 180, 176);
+}

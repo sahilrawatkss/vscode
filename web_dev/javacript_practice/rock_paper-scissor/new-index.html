@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="new-index.css" />
+  </head>
+  <body>
+    <h1 class="heading">ROCK-PAPER-SCISSOR</h1>
+    <div class="main-container">
+      <h1 class="sub-heading">Choose Your Weapon</h1>
+      <p class="para1">First to score 5 wins</p>
+      <div class="choice-container">
+        <div class="player-choice">
+          <p class="player-choose">❔</p>
+          <p class="player-score score-text">Player : 0</p>
+        </div>
+        <div class="comp-choice">
+          <p class="comp-choose">❔</p>
+          <p class="comp-score score-text">Computer : 0</p>
+        </div>
+      </div>
+      <div class="select-container">
+        <button class="rock btn"><p class="size">✊</p></button>
+        <button class="paper btn"><p class="size">✋</p></button>
+        <button class="scissors btn"><p class="size">✌</p></button>
+      </div>
+    </div>
+    <div class="game-over-container hidden">
+      <div class="game-over">
+        <p class="winner">You Won!</p>
+        <button class="new-game">New Game</button>
+      </div>
+    </div>
+    <script src="new-index.js"></script>
+  </body>
+</html>

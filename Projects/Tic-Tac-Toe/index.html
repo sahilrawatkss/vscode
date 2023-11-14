@@ -14,9 +14,9 @@
     <main>
       <div class="grid">
         <!-- Turn indicator -->
-        <div class="turn">
-          <i class="fa-solid fa-x turquoise"></i>
-          <p class="turquoise">Player 1, you're up!</p>
+        <div class="turn turquoise" target-id="turn">
+          <i class="fa-solid fa-x"></i>
+          <p>Player 1, you're up!</p>
         </div>
 
         <!-- Dropdown Menu indicator -->
@@ -46,24 +46,24 @@
         <!-- Score indicator -->
         <div class="score shadow" style="background-color: var(--turquoise)">
           <p>Player 1</p>
-          <span data-id="p1-wins">0 Wins</span>
+          <span target-id="p1-score">0 Wins</span>
         </div>
         <div class="score shadow" style="background-color: var(--light-gray)">
           <p>Ties</p>
-          <span data-id="ties">0</span>
+          <span target-id="ties">0</span>
         </div>
         <div class="score shadow" style="background-color: var(--yellow)">
           <p>Player 2</p>
-          <span data-id="p2-wins">0 Wins</span>
+          <span target-id="p2-score">0 wins</span>
         </div>
       </div>
     </main>
 
     <!-- Modal that opens when game ends -->
-    <div class="modal hidden">
-      <div class="modal-contents">
-        <p data-id="modal-text">Player 1 wins!</p>
-        <button data-id="modal-btn">Play again</button>
+    <div class="modal hidden" target-id="modal">
+      <div class="modal-contents" target-id="modal-contents">
+        <p target-id="modal-text"></p>
+        <button target-id="modal-btn">Play again</button>
       </div>
     </div>
 
