@@ -1,0 +1,33 @@
+<html>
+<head>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"> </script>
+<style>
+input.ng-invalid {
+background-color:red;
+}
+</style>
+</head>
+
+<body>
+<form name="myform" ng-app="">
+UserName: <input name="name" ng-model="username" type="text" required> <span ng-show="myform.name.$invalid && myform.name.$touched">Invalid Entry</span>
+<br>
+Email: <input name="email" ng-model="mail" type="email" required> <span ng-show="myform.email.$invalid && myform.email.$touched">Invalid Username</span>
+<br>
+Password: <input name="pass" ng-model="password" type="password" ng-minlength="8" required> <span ng-show="myform.pass.$invalid && myform.pass.$touched">Invalid Password</span>
+<br>
+<button ng-disabled="myform.$invalid">Submit</button>
+</form>
+
+
+<script>
+const app=angular.module("myapp",[]);
+
+app.controller("control",($scope) {
+
+}
+</script>
+</body>
+</html>

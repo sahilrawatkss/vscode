@@ -1,0 +1,55 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+<style>
+	.error {
+		color:red;
+	}
+
+	input.ng-invalid {
+		background-color: red;
+	}
+</style>
+</head>
+<body>
+<div ng-app="myapp" ng-controller="control">
+<form name="myform" ng-submit="submitForm()" novalidate>
+	Name:
+	<input ng-model="name" name="name" type="text" required>
+	<span class="error" ng-show="myform.name.$dirty && myform.name.$invalid">Not Valid Entry</span>
+	<br>
+	Email:
+	<input ng-model="mail" name="email" type="email" required>
+	<span class="error" ng-show="myform.email.$touched && myform.email.$invalid">Not Valid Entry</span>
+	<br>
+	Password:
+	<input ng-model="pass" name="password" type="password" required>
+	<span class="error" ng-show="myform.password.$touched && myform.password.$invalid">Not Valid Entry</span>
+	<br>
+	<button ng-hide="myform.$invalid">Submit</button>
+	
+</form>
+	
+	<br>
+	<br>
+	<div ng-show="isformsubmit">
+		<h1>Form Submitted</h1>
+		<p>Name: {{name}}</p>
+		<p>Email: {{mail}}</p>
+	</div>
+
+	<script>
+    var app = angular.module('myapp', []);
+
+    app.controller('control', function ($scope) {
+        $scope.isformsubmit= false;
+
+        $scope.submitForm = function () {
+            // Perform additional validation or backend submission here
+            $scope.isformsubmit = true;
+        };
+    });
+</script>
+</div>
+</body>
+</html>

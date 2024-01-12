@@ -286,7 +286,7 @@ static void yy_fatal_error YY_PROTO(( yyconst char msg[] ));
 #define YY_END_OF_BUFFER 4
 static yyconst short int yy_accept[9] =
     {   0,
-        1,    1,    4,    2,    3,    1,    1,    0
+        0,    0,    4,    2,    3,    1,    1,    0
     } ;
 
 static yyconst int yy_ec[256] =
@@ -295,16 +295,16 @@ static yyconst int yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    3,    3,    3,
+        3,    3,    3,    3,    3,    3,    3,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    3,    3,    3,    3,    3,    3,
-        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
-        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
-        1,    1,    1,    1,    1,    1,    3,    3,    3,    3,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
 
-        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
-        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
-        3,    3,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -357,12 +357,11 @@ static char *yy_last_accepting_cpos;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "prac.l"
+#line 1 "validip.l"
 #define INITIAL 0
-#line 2 "prac.l"
-#include<stdio.h>
-int i = 0;
-#line 366 "lex.yy.c"
+#line 2 "validip.l"
+#include <stdio.h>
+#line 365 "lex.yy.c"
 
 /* Macros after this point can all be overridden by user definitions in
  * section 1.
@@ -513,7 +512,8 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 5 "prac.l"
+#line 5 "validip.l"
+
 
 #line 519 "lex.yy.c"
 
@@ -600,20 +600,24 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 6 "prac.l"
-{printf("%d",yyleng);} 
+#line 7 "validip.l"
+{
+    printf("%s is a valid date\n", yytext);
+}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 7 "prac.l"
-
+#line 11 "validip.l"
+{
+    printf("Invalid date: %s\n", yytext);
+}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 8 "prac.l"
+#line 15 "validip.l"
 ECHO;
 	YY_BREAK
-#line 617 "lex.yy.c"
+#line 621 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1499,13 +1503,12 @@ int main()
 	return 0;
 	}
 #endif
-#line 8 "prac.l"
+#line 15 "validip.l"
 
-  
-int yywrap(void){}
-  
-int main()
-{   
+
+int main() {
     yylex();
     return 0;
 }
+
+int yywrap(){}

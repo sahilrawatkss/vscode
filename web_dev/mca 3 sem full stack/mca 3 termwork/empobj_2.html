@@ -1,0 +1,13 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"> </script>
+</head>
+
+<body>
+<div ng-app="" ng-init="emp={name:'Domnik',empid:'1001',department:'COA'}">
+	<ol>
+		<li ng-repeat="(key,val) in emp">{{key +" : " +val}}</li>
+	</ol>
+</div>
+</body>
+</html>

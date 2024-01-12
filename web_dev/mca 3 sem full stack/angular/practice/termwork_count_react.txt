@@ -1,0 +1,40 @@
+COunt.jsx
+import React,{useState} from 'react';
+
+function Count() {
+  const [ct,set]=useState(0);
+
+  const inc=() => {
+    set(ct+1);
+  }
+
+  const dec=()=> {
+    set(ct-1);
+  }
+  return (
+    <div>
+    <h1>Counter Value: {ct}</h1>
+    <button onClick={inc}> Inc </button>
+    <button onClick={dec}> Dec </button>
+    </div>
+  );
+}
+
+export default Count;
+
+
+
+App.jsx
+
+import React from 'react';
+import Count from './count'
+
+function App(props) {
+  return (
+    <div>
+    <Count/>
+    </div>
+  );
+}
+
+export default App;
