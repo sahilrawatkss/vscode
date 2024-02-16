@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h2 class="heading">Price Range Slider</h2>
+      <div class="mincontainer pricecontainer">
+        <span>Minimum Price</span>
+        <input
+          type="text"
+          name="minprice"
+          class="prices"
+          id="minprice"
+          value="10000"
+        />
+      </div>
+      <div class="maxcontainer pricecontainer">
+        <span>Maximum Price</span>
+        <input
+          type="text"
+          name="maxprice"
+          class="prices"
+          id="maxprice"
+          value="80000"
+        />
+      </div>
+
+      <div class="slider">
+        <input
+          type="range"
+          name="minrange"
+          id="minrange"
+          min="0"
+          max="100000"
+          value="10000"
+        />
+        <input
+          type="range"
+          name="maxrange"
+          id="maxrange"
+          min="0"
+          max="100000"
+          value="80000"
+        />
+      </div>
+    </div>
+  </body>
+</html>
