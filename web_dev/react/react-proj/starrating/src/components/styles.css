@@ -1,0 +1,14 @@
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.on {
+  color: yellow;
+}
+
+.off {
+  color: black;
+}
