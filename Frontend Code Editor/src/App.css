@@ -1,0 +1,16 @@
+.codemirror {
+  height: 340px !important;
+  color: rgb(255, 255, 255);
+}
+
+.CodeMirror-gutters {
+  background: #1d1e22;
+}
+
+.CodeMirror-scroll {
+  background: #1d1e22;
+}
+
+.Full-screen-Icon {
+  cursor: pointer;
+}
